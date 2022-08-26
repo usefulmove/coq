@@ -1,6 +1,6 @@
 #![allow(unused)]
 
-const VERSION: &str = "0.2.2";
+const VERSION: &str = "0.3.0";
 
 use colored::*;
 use regex::Regex;
@@ -210,7 +210,7 @@ pub fn highlight_filename(output_str: &str, color: &Color) -> String {
 
     let filename: String = match re.captures(output_str) {
         Some(n) => n[1].to_string(),
-        None => "".to_string(),
+        None => String::from(""),
     };
 
     highlight(output_str, &filename, color)
