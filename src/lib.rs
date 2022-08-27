@@ -1,6 +1,6 @@
 #![allow(unused)]
 
-const VERSION: &str = "0.3.0";
+const VERSION: &str = "0.3.1";
 
 use colored::*;
 use regex::Regex;
@@ -27,6 +27,7 @@ pub struct Theme {
     pub orange_sherbet_bold: Color,
     pub red: Color,
     pub red_bold: Color,
+    pub yellow_canary: Color,
     pub yellow_canary_bold: Color,
     pub white: Color,
     pub white_bold: Color,
@@ -112,6 +113,12 @@ impl Theme {
                 g: 95,
                 b: 73,
                 bold: true,
+            },
+            yellow_canary: Color {
+                r: 255,
+                g: 252,
+                b: 103,
+                bold: false,
             },
             yellow_canary_bold: Color {
                 r: 255,
