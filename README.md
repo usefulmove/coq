@@ -1,2 +1,2 @@
-# coq
+# COQ
 color library
