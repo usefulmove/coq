@@ -179,12 +179,12 @@ pub fn highlight(output_str: &str, highlight_term: &str, color: &Color) -> Strin
     let elements: Vec<&str> = tmp.split(&highlight_term).collect::<Vec<&str>>();
 
     // construct highlighted output
-    let mut o: String = String::new();
+    let mut output: String = String::new();
     let theme = Theme::new();
     for i in 0..elements.len() {
         if i < (elements.len() - 1) {
             let _ = write!(
-                o,
+                output,
                 "{}{}",
                 theme.color_rgb(
                     elements[i],
@@ -197,7 +197,7 @@ pub fn highlight(output_str: &str, highlight_term: &str, color: &Color) -> Strin
             );
         } else {
             let _ = write!(
-                o,
+                output,
                 "{}",
                 theme.color_rgb(
                     elements[i],
@@ -207,7 +207,7 @@ pub fn highlight(output_str: &str, highlight_term: &str, color: &Color) -> Strin
         }
     }
 
-    o
+    output
 }
 
 pub fn highlight_filename(output_str: &str, color: &Color) -> String {
