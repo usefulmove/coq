@@ -1,7 +1,5 @@
 #![allow(unused)]
 
-const VERSION: &str = "0.3.1";
-
 use colored::*;
 use regex::Regex;
 use std::fmt::Write as _;
@@ -14,6 +12,7 @@ pub struct Color {
 }
 
 pub struct Theme {
+    pub blue_coffee: Color,
     pub blue_coffee_bold: Color,
     pub blue_smurf: Color,
     pub blue_smurf_bold: Color,
@@ -36,6 +35,12 @@ pub struct Theme {
 impl Theme {
     pub fn new() -> Self {
         Self {
+            blue_coffee: Color {
+                r: 0,
+                g: 192,
+                b: 255,
+                bold: false,
+            },
             blue_coffee_bold: Color {
                 r: 0,
                 g: 192,
