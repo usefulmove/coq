@@ -1,2 +1,2 @@
-# COQ
+# cor
 color library
