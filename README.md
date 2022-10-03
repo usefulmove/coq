@@ -1,2 +1,2 @@
-# cor
+# Cor
 color library
