@@ -11,6 +11,12 @@ pub struct Color {
     pub bold: bool,
 }
 
+impl Color {
+    pub fn new(r: u8, g: u8, b: u8, bold: bool) -> Self {
+        Self { r, g, b, bold }
+    }
+}
+
 pub struct Theme {
     pub blue_coffee: Color,
     pub blue_coffee_bold: Color,
