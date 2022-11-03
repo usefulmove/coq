@@ -179,6 +179,78 @@ impl Theme {
         "".truecolor(0, 0, 0)
     }
 
+    pub fn blue_coffee(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.blue_coffee)
+    }
+
+    pub fn blue_coffee_bold(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.blue_coffee_bold)
+    }
+
+    pub fn blue_smurf(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.blue_smurf)
+    }
+
+    pub fn blue_smurf_bold(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.blue_smurf_bold)
+    }
+
+    pub fn cream(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.cream)
+    }
+
+    pub fn cream_bold(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.cream_bold)
+    }
+
+    pub fn charcoal_cream(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.charcoal_cream)
+    }
+
+    pub fn green_eggs(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.green_eggs)
+    }
+
+    pub fn green_eggs_bold(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.green_eggs_bold)
+    }
+
+    pub fn grey_mouse(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.grey_mouse)
+    }
+
+    pub fn orange_sherbet(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.orange_sherbet)
+    }
+
+    pub fn orange_sherbet_bold(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.orange_sherbet_bold)
+    }
+
+    pub fn red(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.red)
+    }
+
+    pub fn red_bold(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.red_bold)
+    }
+
+    pub fn yellow_canary(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.yellow_canary)
+    }
+
+    pub fn yellow_canary_bold(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.yellow_canary_bold)
+    }
+
+    pub fn white(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.white)
+    }
+
+    pub fn white_bold(&self, message: &str) -> ColoredString {
+        self.color_rgb(message, &self.white_bold)
+    }
+
 }
 
 pub fn highlight(output_str: &str, highlight_term: &str, color: &Color) -> String {
